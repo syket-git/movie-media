@@ -6,12 +6,16 @@ export const GlobalContext: any = createContext(null);
 
 export default function App({ Component, pageProps }: AppProps) {
   const [text, setText] = useState('Superman');
+  const [movieDetails, setMovieDetails] = useState(null);
   const [movies, setMovies] = useState([]);
+
   const initialValue = {
     text,
     setText,
     movies,
     setMovies,
+    movieDetails,
+    setMovieDetails,
   };
 
   return (

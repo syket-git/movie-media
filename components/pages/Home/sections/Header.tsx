@@ -1,13 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
   return (
     <div className="bg-primary h-[60px]">
       <div className="container flex justify-between">
-        <h3 className="text-xl pt-4 cursor-pointer text-white font-bold">
-          Movie Media
-        </h3>
+        <Link href="/">
+          <h3 className="text-xl pt-4 cursor-pointer text-white font-bold">
+            Movie Media
+          </h3>
+        </Link>
         <div className="mt-[17px] cursor-pointer">
           <p className="font-medium text-white -ml-3">Jhon D.</p>
           <div className="w-[40px] h-[40px] overflow-hidden rounded-full">
