@@ -7,16 +7,16 @@ const Banner = () => {
 
   return (
     <div className="container">
-      <div className="flex my-10">
-        <div className="overflow-hidden w-[300px] h-auto">
+      <div className="flex lg:flex-row flex-col my-10">
+        <div className="overflow-hidden w-full sm:w-[300px] h-auto">
           <img
             className="w-full h-full object-fill"
             src={movieDetails?.Poster}
             alt={movieDetails?.Title}
           />
         </div>
-        <div className="ml-5 p-4 flex-1">
-          <h3 className="text-white text-3xl font-bold">
+        <div className="lg:ml-5 pt-3 lg:pt-0 lg:p-4 flex-1">
+          <h3 className="text-white text-xl md:text-2xl lg:text-3xl font-bold">
             {movieDetails?.Title}
           </h3>
           <div className="text-white pt-3 space-y-1">

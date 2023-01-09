@@ -6,7 +6,7 @@ import { DebounceInput } from 'react-debounce-input';
 const Search = () => {
   const { text, setText }: any = useContext(GlobalContext);
   return (
-    <div className="container mt-14 flex items-center justify-between">
+    <div className="container mt-14 flex sm:flex-row flex-col sm:gap-y-0 gap-y-3 sm:items-center sm:justify-between">
       {text ? (
         <h4 className="text-white">
           searching by <span className="text-lg text-white">{`"${text}"`}</span>
